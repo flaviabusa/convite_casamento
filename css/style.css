@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+SC:wght@300;400;500;600;700&display=swap");
+body{
+    font-size: clamp(0,7rem, calc(0,5rem + 1,5vw), 3rem);
+    font-family: 'Cormorant SC', 'Carattere';
+}
+
+
+header{
+    margin: 20px 40px 20px 40px;
+}
+
+header div{
+
+}
