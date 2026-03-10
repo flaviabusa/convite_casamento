@@ -2,24 +2,77 @@
 body{
     font-size: clamp(0,7rem, calc(0,5rem + 1,5vw), 3rem);
     font-family: 'Cormorant SC', 'Carattere';
-    margin: 20px 40px 20px 40px;
+    
 }
 
+/* HEADER */
 
 header{
+    padding: 20px 40px ;
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    background-color: #3B001F;
+}
+
+header div.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
 header div{
+    padding-right: 10px;
+
+}
+
+header div h1{
+    font-size: 1.5rem;
+}
+
+
+header nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
+header nav ul li{
+    padding-left: 10px;
+    text-decoration: underline;
+}
 
-main{
+header nav ul li a{
+    color: white;
+}
+
+/* ======== section jj ======= */
+
+.jj h1{
+    font-family:'Carattere' ;
+    text-align: center;
+    font-size: 6rem;
+    color: #3B001F;
+    margin: 20px 40px 20px 40px;
+}
+
+.jj div{
+    text-align: center;
+    background-image: url(../src/image\ 4.png);
+    background-size: cover;
+    padding: 100px 60px 100px 60px;
     
 }
+
+.jj div p{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.jj div p.um{
+    padding-bottom: 30px;
+}
+
+
 
