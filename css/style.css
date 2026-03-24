@@ -268,16 +268,11 @@ footer p {
         padding-right: 90px;
     }
 
-
-    section.cards ul {
-        grid-template-columns: 1fr;
-
-    }
-
 }
 
 
 /* ===== celulares ===== */
+
 @media (max-width: 768px) {
 
     header {
@@ -294,7 +289,8 @@ footer p {
         position: absolute;
         top: 80px;
         right: 0;
-        background: #333;
+        background: rgb(148, 99, 107);
+        border-radius: 20px;
         width: 200px;
     }
 
@@ -322,6 +318,11 @@ footer p {
 
     section.jj div.imagem p.resumo {
         font-size: 1.5rem;
+    }
+    
+    section.cards ul {
+        grid-template-columns: 1fr;
+
     }
 
     section.cards ul {
@@ -393,7 +394,8 @@ footer p {
         position: absolute;
         top: 80px;
         right: 0;
-        background: #333;
+        background: rgb(148, 99, 107);
+        border-radius: 20px;
         width: 200px;
     }
 
@@ -417,6 +419,11 @@ footer p {
 
     section.jj div p {
         font-size: 1.1rem;
+    }
+
+    section.cards ul {
+        grid-template-columns: 1fr;
+
     }
 
     section.cards ul li.card h1 {
