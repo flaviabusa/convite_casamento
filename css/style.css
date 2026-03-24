@@ -16,9 +16,9 @@ header {
     background-color: #3B001F;
 }
 
-header div.container {
+header>div.container {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     color: white;
 }
@@ -47,6 +47,12 @@ header nav ul li {
 header nav ul li a {
     color: white;
     font-size: 1.2rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 /* ======== section jj ======= */
@@ -232,23 +238,24 @@ footer p {
 
 @media (max-width: 1024px) {
 
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     header div.container {
         width: 100%;
-        justify-content: space-between;
+
     }
 
-    header nav ul{
+    header nav ul {
         justify-content: center;
         gap: 20px;
     }
 
     header nav ul li {
         padding-left: 0;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
     }
 
     section.jj h1 {
@@ -264,7 +271,7 @@ footer p {
 
     section.cards ul {
         grid-template-columns: 1fr;
-        
+
     }
 
 }
@@ -277,20 +284,31 @@ footer p {
         padding: 15px 20px;
     }
 
-    header nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
+    .menu-toggle {
+        display: block;
+        color: white;
     }
 
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        font-size: 1.3rem;
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #333;
+        width: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav.active {
+        display: block;
     }
 
 
@@ -335,11 +353,11 @@ footer p {
         display: block;
     }
 
-    footer h2{
+    footer h2 {
         font-size: 2rem;
     }
 
-    footer p{
+    footer p {
         font-size: 1.7rem;
     }
 
@@ -347,22 +365,51 @@ footer p {
 
 
 /* ===== celulares pequenos ===== */
+
 @media (max-width: 480px) {
     header {
         padding: 15px 20px;
     }
 
-   header div h1{
-    font-size: 1.5rem;
-   }
+    header div h1 {
+        font-size: 1.5rem;
+    }
 
-   header div p{
-    font-size: 1.3rem;
-   }
+    header div p {
+        display: none;
+    }
 
-   header nav ul li a{
-    font-size: 1rem;
-   }
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #333;
+        width: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
 
     section.jj h1 {
         font-size: 4rem;
